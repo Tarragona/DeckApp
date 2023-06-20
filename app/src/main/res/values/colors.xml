@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="titulos">#FFFFFFFF</color>
+    <color name="nombres_cartas">#000000</color>
+    <color name="botones">#FFFFFF</color>
+</resources>

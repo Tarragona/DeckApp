@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "872515252760",
+    "project_id": "deckapp-f4aa0",
+    "storage_bucket": "deckapp-f4aa0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872515252760:android:76771b3c79b184c768496d",
+        "android_client_info": {
+          "package_name": "com.example.deckappygo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "872515252760-98paq39p133tivdt4r2ss6smrad15tu2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.deckappygo",
+            "certificate_hash": "d4fdc5db30be278dd6b4d2836d4b25fb86f46540"
+          }
+        },
+        {
+          "client_id": "872515252760-38mri877qe7t784180b3mfodoa4v62n6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMe5T9Nn5FhOa7L72ZQ6Z0Uhzs_-5-1LY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "872515252760-38mri877qe7t784180b3mfodoa4v62n6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
