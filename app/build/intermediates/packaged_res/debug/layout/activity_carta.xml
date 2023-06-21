@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.CartaActivity">
+
+
+    <!-- Fondo -->
+    <ImageView
+        android:id="@+id/fondoBusqueda"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="fondo_ppal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_principal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+
+    <!-- Boton Atras -->
+    <Button
+        android:id="@+id/btnAtras"
+        android:layout_width="48dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        app:icon="@drawable/boton_atras"
+        app:iconGravity="textStart"
+        app:iconSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <!-- Boton Favoritos -->
+    <view
+        android:id="@+id/iconoElegirFavorito"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:animateLayoutChanges="false"
+        android:animationCache="true"
+        android:background="@android:drawable/btn_star_big_off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Imagen de la carta -->
+    <ImageView
+        android:id="@+id/imgCartaElegida"
+        android:layout_width="222dp"
+        android:layout_height="214dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fondoBusqueda"
+        app:srcCompat="@drawable/carta_carta_elegida1" />
+
+
+    <!-- Nombre de la carta -->
+    <TextView
+        android:id="@+id/txtNombreCarta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Chimaera,The Master of Beasts"
+        android:textAlignment="center"
+        android:textColor="@color/nombres_cartas"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCartaElegida" />
+
+
+    <!-- Grid para las cartas -->
+    <GridView
+        android:id="@+id/gridcartas"
+        android:layout_width="400dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="1"
+        android:background="#1AFFFFFF"
+        android:numColumns="3"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreCarta" />
+
+
+
+    <TextView
+        android:id="@+id/txtContenido"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Contenido"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridcartas"
+        tools:ignore="MissingConstraints" />
+
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:background="#176E6E"
+        android:strokeWidth="1"
+        android:strokeColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/fondoBusqueda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <!-- Inicio -->
+    <view
+        android:id="@+id/icono_home"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/boton_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/icono_busqueda"
+        app:layout_constraintStart_toStartOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/txtInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Inicio"
+        app:layout_constraintEnd_toStartOf="@+id/txtBusqueda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icono_home" />
+
+
+    <!-- Busqueda -->
+    <view
+        android:id="@+id/icono_busqueda"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/boton_busqueda"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtBusqueda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Busqueda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icono_busqueda" />
+
+
+    <!-- Favoritos -->
+    <view
+        android:id="@+id/icono_favoritos"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/boton_favoritos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/icono_busqueda" />
+
+    <TextView
+        android:id="@+id/txtMiDeck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Mi Deck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtBusqueda"
+        app:layout_constraintTop_toBottomOf="@+id/icono_favoritos" />
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

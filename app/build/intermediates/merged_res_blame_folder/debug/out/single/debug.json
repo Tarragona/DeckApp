@@ -1,0 +1,322 @@
+[
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/font_squealer.otf.flat",
+        "source": "com.example.deckappygo.app-main-41:/font/squealer.otf"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_log_campo_contrase_a.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/log_campo_contrase_a.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/mipmap-xhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/layout_activity_login.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/mipmap-mdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_inicio_image_33.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/inicio_image_33.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_carta_atras.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/carta_atras.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_fondo_principal.jpg.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/fondo_principal.jpg"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_carta_datos_atributo.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/carta_datos_atributo.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_carta_datos_nivel.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/carta_datos_nivel.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_log_boton_log.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/log_boton_log.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/font_squealer_embossed.otf.flat",
+        "source": "com.example.deckappygo.app-main-41:/font/squealer_embossed.otf"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_carta_atributo_img.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/carta_atributo_img.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_fondo_log.jpg.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/fondo_log.jpg"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/layout_activity_favoritos.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/layout/activity_favoritos.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/mipmap-xxxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_favoritos_mi_deck_icono_favoritos.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/favoritos_mi_deck_icono_favoritos.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_carga_fondo_carga.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/carga_fondo_carga.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/layout_busqueda_item_s_carta.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/layout/busqueda_item_s_carta.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_inicio_fondo.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/inicio_fondo.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_favoritos_mi_deck_image_7.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/favoritos_mi_deck_image_7.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_inicio_carta4.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/inicio_carta4.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/layout_busqueda_item.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/layout/busqueda_item.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_carta_carta_elegida1.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/carta_carta_elegida1.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/xml_backup_rules.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_carta_datos_atk.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/carta_datos_atk.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_logo_aplicacion.jpg.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/logo_aplicacion.jpg"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/font_ancient_medium.ttf.flat",
+        "source": "com.example.deckappygo.app-main-41:/font/ancient_medium.ttf"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/layout_activity_busqueda.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/layout/activity_busqueda.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/layout_activity_carta.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/layout/activity_carta.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_busqueda_fondo.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/busqueda_fondo.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_favoritos_mi_deck_icono_busqueda.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/favoritos_mi_deck_icono_busqueda.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_boton_home.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/boton_home.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/mipmap-xxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_boton_favoritos.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/boton_favoritos.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_carta_fondo.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/carta_fondo.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_carta_tipo_img.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/carta_tipo_img.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_inicio_rectangle_1.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/inicio_rectangle_1.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_carta_datos_def.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/carta_datos_def.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/layout_activity_carga.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/layout/activity_carga.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_boton_atras.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/boton_atras.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_carta_carta_elegida.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/carta_carta_elegida.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_favoritos_mi_deck_fondo.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/favoritos_mi_deck_fondo.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/layout_activity_inicio.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/layout/activity_inicio.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/layout_activity_main.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_carta_favorito.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/carta_favorito.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_busqueda_rectangle_16.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/busqueda_rectangle_16.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_favoritos_mi_deck_icono_home.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/favoritos_mi_deck_icono_home.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_favoritos_mi_deck_carta4.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/favoritos_mi_deck_carta4.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_fondo_principal2.jpg.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/fondo_principal2.jpg"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_boton_busqueda.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/boton_busqueda.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_carta_datos_tipo.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/carta_datos_tipo.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_busqueda_fondo1.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/busqueda_fondo1.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_inicio_image_35.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/inicio_image_35.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_busqueda_rectangle_1.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/busqueda_rectangle_1.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_favoritos_mi_deck_image_5.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/favoritos_mi_deck_image_5.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/font_relay_basic_regular.ttf.flat",
+        "source": "com.example.deckappygo.app-main-41:/font/relay_basic_regular.ttf"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_carta_nivel_img.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/carta_nivel_img.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_animacion_carga.gif.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/animacion_carga.gif"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_fondo_log2.jpg.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/fondo_log2.jpg"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/mipmap-hdpi_ic_launcher_background.png.flat",
+        "source": "com.example.deckappygo.app-main-41:/mipmap-hdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_busqueda_rectangle_15.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/busqueda_rectangle_15.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_busqueda_icono_busqueda_carta.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/busqueda_icono_busqueda_carta.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_carta_datos_efecto.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/carta_datos_efecto.xml"
+    },
+    {
+        "merged": "com.example.deckappygo.app-merged_res-39:/drawable_log_campo_usuario.xml.flat",
+        "source": "com.example.deckappygo.app-main-41:/drawable/log_campo_usuario.xml"
+    }
+]
