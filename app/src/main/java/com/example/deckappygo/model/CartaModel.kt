@@ -1,36 +1,9 @@
 package com.example.deckappygo.model
 
-import com.google.gson.annotations.SerializedName
-
-//data class CartaModel(
-//
 //    //EndPoints
-//
+
 //    //Dentro del paquete data:
-//    val id: Int,
-//    val name: String,
-//    val type: String,
-//    val frameType: String,
-//    val desc: String,
-//    val atk: Int,
-//    val def: Int,
-//    val level: Int,
-//    val race: String,
-//    val attribute: String,
-//    val archetype: String,
-//    val scale: String,
-//    val linkval: String,
-//    val linkmarkers: String,
-//
-//    //Dentro del paquete card_images:
-//    //val id: Int
-//    val image_url: ArrayList<String>,
-//    val image_url_small: ArrayList<String>,
-//    val image_url_cropped: ArrayList<String>
-//
-//
-//)
-data class Welcome (
+data class CartaModel (
     val id: Long,
     val name: String,
     val type: Type,
@@ -39,8 +12,8 @@ data class Welcome (
     val race: Race,
     val archetype: String? = null,
     val cardSets: List<CardSet>? = null,
-    val cardImages: List<CardImage>,
-    val cardPrices: List<CardPrice>,
+    val card_images: List<CardImage>,
+//    val cardPrices: List<CardPrice>,
     val atk: Long? = null,
     val def: Long? = null,
     val level: Long? = null,
@@ -51,26 +24,26 @@ data class Welcome (
     val banlistInfo: BanlistInfo? = null
 )
 
-data class Datum (
-    val id: Long,
-    val name: String,
-    val type: Type,
-    val frameType: FrameType,
-    val desc: String,
-    val race: Race,
-    val archetype: String? = null,
-    val cardSets: List<CardSet>? = null,
-    val cardImages: List<CardImage>,
-    val cardPrices: List<CardPrice>,
-    val atk: Long? = null,
-    val def: Long? = null,
-    val level: Long? = null,
-    val attribute: Attribute? = null,
-    val scale: Long? = null,
-    val linkval: Long? = null,
-    val linkmarkers: List<Linkmarker>? = null,
-    val banlistInfo: BanlistInfo? = null
-)
+//data class Datum (
+//    val id: Long,
+//    val name: String,
+//    val type: Type,
+//    val frameType: FrameType,
+//    val desc: String,
+//    val race: Race,
+//    val archetype: String? = null,
+//    val cardSets: List<CardSet>? = null,
+//    val cardImages: List<CardImage>,
+//    val cardPrices: List<CardPrice>,
+//    val atk: Long? = null,
+//    val def: Long? = null,
+//    val level: Long? = null,
+//    val attribute: Attribute? = null,
+//    val scale: Long? = null,
+//    val linkval: Long? = null,
+//    val linkmarkers: List<Linkmarker>? = null,
+//    val banlistInfo: BanlistInfo? = null
+//)
 
 enum class Attribute {
     Dark,
@@ -96,24 +69,24 @@ enum class Ban {
 
 data class CardImage (
     val id: Long,
-    val imageURL: String,
-    val imageURLSmall: String,
-    val imageURLCropped: String
+    val image_url: String,
+    val image_url_small: String,
+    val image_url_cropped: String
 )
 
-data class CardPrice (
-    val cardmarketPrice: String,
-    val tcgplayerPrice: String,
-    val ebayPrice: String,
-    val amazonPrice: String,
-    val coolstuffincPrice: String
-)
+//data class CardPrice (
+//    val cardmarketPrice: String,
+//    val tcgplayerPrice: String,
+//    val ebayPrice: String,
+//    val amazonPrice: String,
+//    val coolstuffincPrice: String
+//)
 
 data class CardSet (
     val setName: String,
     val setCode: String,
     val setRarity: SetRarity,
-    val setRarityCode: SetRarityCode,
+//    val setRarityCode: SetRarityCode,
     val setPrice: String
 )
 
@@ -158,38 +131,38 @@ enum class SetRarity {
     UltraSecretRare
 }
 
-enum class SetRarityCode {
-    C,
-    CR,
-    Dnpr,
-    Drpr,
-    Dspr,
-    Dupr,
-    Empty,
-    GScR,
-    Ggr,
-    Gr,
-    Gur,
-    Msr,
-    PG,
-    PS,
-    PScR,
-    Pir,
-    R,
-    SP,
-    SSP,
-    ScR,
-    Sfr,
-    Shr,
-    Spr,
-    Sr,
-    StR,
-    The10000ScR,
-    UScR,
-    Upr,
-    Ur,
-    UtR
-}
+//enum class SetRarityCode {
+//    C,
+//    CR,
+//    Dnpr,
+//    Drpr,
+//    Dspr,
+//    Dupr,
+//    Empty,
+//    GScR,
+//    Ggr,
+//    Gr,
+//    Gur,
+//    Msr,
+//    PG,
+//    PS,
+//    PScR,
+//    Pir,
+//    R,
+//    SP,
+//    SSP,
+//    ScR,
+//    Sfr,
+//    Shr,
+//    Spr,
+//    Sr,
+//    StR,
+//    The10000ScR,
+//    UScR,
+//    Upr,
+//    Ur,
+//    UtR
+//}
 
 enum class FrameType {
     Effect,

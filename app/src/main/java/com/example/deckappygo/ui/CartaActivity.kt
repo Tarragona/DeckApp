@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
+import com.bumptech.glide.Glide
 import com.example.deckappygo.R
 
 class CartaActivity : AppCompatActivity() {
@@ -70,4 +72,26 @@ class CartaActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    override fun onStart() {
+        super.onStart()
+
+        var nombreCarta  = findViewById<TextView>(R.id.txtNombreCarta)
+        var nombre = intent.extras?.getString("nombre")
+
+        var imagencarta = findViewById<ImageView>(R.id.imgCartaElegida)
+        var imagen = intent.extras?.getString("imagenUrl")
+
+        Glide.with(this)
+            .load(imagen)
+            .placeholder(R.drawable.animacion_carga)
+            .centerCrop()
+            .into(imagencarta)
+
+
+        nombreCarta.text = nombre
+
+    }
+
+
 }

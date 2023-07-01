@@ -6,19 +6,24 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.example.deckappygo.R
 
 class CargaActivity : AppCompatActivity() {
+
+    private lateinit var animacion: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_carga)
+        animacion = findViewById(R.id.animacionCarga)
 
         Handler(Looper.getMainLooper()).postDelayed({
 
             //SharedPreferences (Recibir informacion)
-            var prefs = getSharedPreferences("com.example.deckappygo.sharedpref", Context.MODE_PRIVATE)
-            var user = prefs.getString("user", "")
+//            var prefs = getSharedPreferences("com.example.deckappygo.sharedpref", Context.MODE_PRIVATE)
+//            var user = prefs.getString("user", "")
 
             var intent = Intent(this, InicioActivity::class.java)
 
@@ -30,7 +35,7 @@ class CargaActivity : AppCompatActivity() {
 
         },3000)
 
-        Glide.with(getBaseContext()).load(R.drawable.animacion_carga)
+//        Glide.with(getBaseContext()).load(animacion)
 
 
     }

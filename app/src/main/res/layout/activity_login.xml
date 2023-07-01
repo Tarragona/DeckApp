@@ -39,88 +39,25 @@
 
 
     <!-- Boton Login -->
-    <View
-        android:id="@+id/btnLogin"
-        android:layout_width="160dp"
-        android:layout_height="56dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="350dp"
-        android:background="@drawable/log_boton_log"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/nombreapp" />
 
 
     <!-- TextoLogin -->
 
     <!-- TextoUsuario -->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:gravity="top"
-        android:text="@string/btnInicio"
-        android:textAlignment="center"
-        android:textAppearance="@style/textologin"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnLogin"
-        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="@+id/btnLogin"
-        app:layout_constraintTop_toTopOf="@+id/btnLogin"
-        tools:ignore="RtlCompat" />
-
     <View
-        android:id="@+id/campousuario"
-        android:layout_width="216dp"
-        android:layout_height="35dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="130dp"
-        android:background="@drawable/log_campo_usuario"
+        android:id="@+id/btnLogin"
+        android:layout_width="160dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/log_boton_log"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/nombreapp" />
 
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Usuario"
-        android:inputType="text"
-        android:padding="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/campousuario"
-        app:layout_constraintStart_toStartOf="@+id/campousuario"
-        app:layout_constraintTop_toTopOf="@+id/campousuario"
-        tools:ignore="MissingConstraints" />
-
-
     <!-- TextoContraseña-->
-    <View
-        android:id="@+id/campocontraseña"
-        android:layout_width="216dp"
-        android:layout_height="35dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/log_campo_contrase_a"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/campousuario" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Contraseña"
-        android:inputType="text"
-        android:padding="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/campocontraseña"
-        app:layout_constraintStart_toStartOf="@+id/campocontraseña"
-        app:layout_constraintTop_toTopOf="@+id/campocontraseña"
-        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

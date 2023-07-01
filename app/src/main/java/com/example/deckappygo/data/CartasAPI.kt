@@ -1,14 +1,15 @@
 package com.example.deckappygo.data
-import com.example.deckappygo.model.Welcome
+
 import com.example.deckappygo.model.CartasCollectionModel
 import retrofit2.Call
 import retrofit2.http.GET
+import retrofit2.http.Query
 
-interface CartaInterfaceAPI {
+interface CartasAPI {
 
-//    @GET("/api/v2/exercise?limit=500")
     @GET("cardinfo.php?")
     fun getCartas(
+        //@Query("name") name: String
     ) : Call<CartasCollectionModel>
 
 }

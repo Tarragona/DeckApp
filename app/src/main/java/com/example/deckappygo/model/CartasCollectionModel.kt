@@ -2,7 +2,6 @@ package com.example.deckappygo.model
 
 data class CartasCollectionModel(
 
-    val data: ArrayList<Welcome>
-
+    val data: ArrayList<CartaModel>,
 
 )

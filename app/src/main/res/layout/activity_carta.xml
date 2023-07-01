@@ -58,8 +58,8 @@
     <!-- Imagen de la carta -->
     <ImageView
         android:id="@+id/imgCartaElegida"
-        android:layout_width="222dp"
-        android:layout_height="214dp"
+        android:layout_width="275dp"
+        android:layout_height="0dp"
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -87,8 +87,8 @@
     <!-- Grid para las cartas -->
     <GridView
         android:id="@+id/gridcartas"
-        android:layout_width="400dp"
-        android:layout_height="223dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:alpha="1"
@@ -203,12 +203,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txtBusqueda"
         app:layout_constraintTop_toBottomOf="@+id/icono_favoritos" />
-
-
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
