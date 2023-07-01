@@ -57,7 +57,7 @@ class BusquedaActivity : AppCompatActivity()  {
         adapter.onItemClick = { carta: CartaModel ->
             val intent = Intent(this, CartaActivity::class.java)
             intent.putExtra("nombre", carta.name)
-            intent.putExtra("imagenUrl", carta.card_images.first().image_url_small)
+            intent.putExtra("imagenUrl", carta.card_images.first().image_url)
             startActivity(intent)
             finish()
         }
