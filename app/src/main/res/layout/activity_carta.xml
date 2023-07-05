@@ -8,6 +8,10 @@
 
 
     <!-- Fondo -->
+
+
+    <!-- Boton Atras -->
+
     <ImageView
         android:id="@+id/fondoBusqueda"
         android:layout_width="match_parent"
@@ -15,16 +19,16 @@
         android:contentDescription="fondo_ppal"
         android:scaleType="centerCrop"
         android:src="@drawable/fondo_principal"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
     </ImageView>
 
-
-    <!-- Boton Atras -->
     <Button
         android:id="@+id/btnAtras"
         android:layout_width="48dp"
@@ -41,16 +45,27 @@
 
 
     <!-- Boton Favoritos -->
-    <view
-        android:id="@+id/iconoElegirFavorito"
-        class="androidx.appcompat.widget.ActionMenuView"
+<!--    <view-->
+<!--        android:id="@+id/iconoElegirFavorito"-->
+<!--        class="androidx.appcompat.widget.ActionMenuView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:animateLayoutChanges="false"-->
+<!--        android:animationCache="true"-->
+<!--        android:background="@android:drawable/btn_star_big_off"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <Switch
+        android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:animateLayoutChanges="false"
-        android:animationCache="true"
-        android:background="@android:drawable/btn_star_big_off"
+        android:text="Favoritos"
+        android:textColor="#FF9800"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -58,9 +73,10 @@
     <!-- Imagen de la carta -->
     <ImageView
         android:id="@+id/imgCartaElegida"
-        android:layout_width="275dp"
-        android:layout_height="0dp"
+        android:layout_width="313px"
+        android:layout_height="456px"
         android:layout_marginTop="50dp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,37 +100,236 @@
         app:layout_constraintTop_toBottomOf="@+id/imgCartaElegida" />
 
 
-    <!-- Grid para las cartas -->
-    <GridView
-        android:id="@+id/gridcartas"
+    <!--Propiedades-->
+
+    <!--Efecto-->
+    <TextView
+        android:id="@+id/txtEfecto"
+        android:layout_width="72dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#40FFFFFF"
+        android:text="Efecto"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtAtributo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreCarta"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtMosEfecto"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#40FFFFFF"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtMosAtrib"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEfecto"
+        tools:ignore="MissingConstraints" />
+
+
+    <!--Atributo-->
+    <TextView
+        android:id="@+id/txtAtributo"
+        android:layout_width="72dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        android:background="#40FFFFFF"
+        android:text="Atributo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreCarta"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtMosAtrib"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="#40FFFFFF"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAtributo" />
+
+
+    <!--Tipo-->
+    <TextView
+        android:id="@+id/txtTipo"
+        android:layout_width="72dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:background="#40FFFFFF"
+        android:text="Tipo"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtAtributo"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreCarta"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtMosTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="#40FFFFFF"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtMosAtrib"
+        app:layout_constraintTop_toBottomOf="@+id/txtTipo" />
+
+
+    <!--Nivel-->
+    <TextView
+        android:id="@+id/txtNivel"
+        android:layout_width="72dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:background="#40FFFFFF"
+        android:text="Nivel"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtAtk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMosEfecto"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtMosNivel"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="#40FFFFFF"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtMosAtk"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNivel"
+        tools:ignore="MissingConstraints" />
+
+
+    <!--Ataque-->
+    <TextView
+        android:id="@+id/txtAtk"
+        android:layout_width="72dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:background="#40FFFFFF"
+        android:text="Ataque"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMosAtrib"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtMosAtk"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:background="#40FFFFFF"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAtk"
+        tools:ignore="MissingConstraints" />
+
+
+    <!--Defensa-->
+    <TextView
+        android:id="@+id/txtDef"
+        android:layout_width="72dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:background="#40FFFFFF"
+        android:text="Defensa"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtAtk"
+        app:layout_constraintTop_toBottomOf="@+id/txtMosTipo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtMosDef"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="#40FFFFFF"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtMosAtk"
+        app:layout_constraintTop_toBottomOf="@+id/txtDef" />
+
+    <!--Texto de la carta-->
+    <TextView
+        android:id="@+id/txtCont"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:alpha="1"
-        android:background="#1AFFFFFF"
-        android:numColumns="3"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="#40FFFFFF"
+        android:text="Texto de la carta:"
+        android:textColor="#000000"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNombreCarta" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/txtMosNivel" />
 
     <TextView
         android:id="@+id/txtContenido"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:text="Contenido"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="#40FFFFFF"
+        android:textColor="#000000"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gridcartas"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/txtCont"
+        tools:ignore="MissingConstraints"
+        tools:text="Contenido" />
 
 
     <!-- Toolbar -->
@@ -131,7 +346,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
-
 
     <!-- Inicio -->
     <view
@@ -155,7 +369,6 @@
         app:layout_constraintEnd_toStartOf="@+id/txtBusqueda"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/icono_home" />
-
 
     <!-- Busqueda -->
     <view
@@ -203,6 +416,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/txtBusqueda"
         app:layout_constraintTop_toBottomOf="@+id/icono_favoritos" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

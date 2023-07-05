@@ -1,15 +1,15 @@
 package com.example.deckappygo.model
 
-//    //EndPoints
+    //EndPoints
 
-//    //Dentro del paquete data:
+    //Dentro del paquete data:
 data class CartaModel (
-    val id: Long,
+    val id: Int,
     val name: String,
-    val type: Type,
+    val type: String,
     val frameType: FrameType,
     val desc: String,
-    val race: Race,
+    val race: String,
     val archetype: String? = null,
     val cardSets: List<CardSet>? = null,
     val card_images: List<CardImage>,
@@ -17,33 +17,12 @@ data class CartaModel (
     val atk: Long? = null,
     val def: Long? = null,
     val level: Long? = null,
-    val attribute: Attribute? = null,
+    val attribute: String,
     val scale: Long? = null,
     val linkval: Long? = null,
     val linkmarkers: List<Linkmarker>? = null,
     val banlistInfo: BanlistInfo? = null
 )
-
-//data class Datum (
-//    val id: Long,
-//    val name: String,
-//    val type: Type,
-//    val frameType: FrameType,
-//    val desc: String,
-//    val race: Race,
-//    val archetype: String? = null,
-//    val cardSets: List<CardSet>? = null,
-//    val cardImages: List<CardImage>,
-//    val cardPrices: List<CardPrice>,
-//    val atk: Long? = null,
-//    val def: Long? = null,
-//    val level: Long? = null,
-//    val attribute: Attribute? = null,
-//    val scale: Long? = null,
-//    val linkval: Long? = null,
-//    val linkmarkers: List<Linkmarker>? = null,
-//    val banlistInfo: BanlistInfo? = null
-//)
 
 enum class Attribute {
     Dark,

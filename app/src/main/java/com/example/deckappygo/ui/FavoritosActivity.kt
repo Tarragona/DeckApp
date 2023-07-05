@@ -23,10 +23,9 @@ class FavoritosActivity : AppCompatActivity() {
         setContentView(R.layout.activity_favoritos)
 
 
-        //El boton Back vuelve a la pantalla anterior
+        //El boton Back
         btnAtras = findViewById(R.id.btnAtras)
         btnAtras.setOnClickListener {
-            finish()
             onBackPressed()
         }
 

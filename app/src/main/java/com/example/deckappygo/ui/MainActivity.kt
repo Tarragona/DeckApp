@@ -43,9 +43,10 @@ class MainActivity : AppCompatActivity() {
             var prefs = getSharedPreferences("com.example.deckappygo.sharedpref", Context.MODE_PRIVATE)
             prefs.edit().putString("user", userName).apply()
 
+            //SE ROMPE
 //            btnLogin = findViewById(R.id.btnLogin)
 //            btnLogin.setOnClickListener {
-//                val intent: Intent = Intent(this, InicioActivity::class.java)
+//                val intent: Intent = Intent(this, CargaActivity::class.java)
 //                startActivity(intent)
 //            }
 

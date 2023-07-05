@@ -14,9 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DeckAppYGO"
         tools:targetApi="34">
-<!--        <activity-->
-<!--            android:name=".ui.LoginActivity"-->
-<!--            android:exported="false" />-->
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.CartaActivity"
             android:exported="false" />
