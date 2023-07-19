@@ -38,7 +38,7 @@ class BusquedaAdapter(var cartas: MutableList<CartaModel>, context: Context) : R
                .into(holder.img)
     }
 
-    fun update(nuevasCartas: MutableList<CartaModel>){
+    fun update(nuevasCartas: ArrayList<CartaModel>){
         cartas = nuevasCartas
         this.notifyDataSetChanged()
     }

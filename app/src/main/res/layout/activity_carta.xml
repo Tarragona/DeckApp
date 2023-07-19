@@ -71,6 +71,17 @@
 
 
     <!-- Imagen de la carta -->
+    <TextView
+        android:id="@+id/txtID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCartaElegida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imgCartaElegida"
         android:layout_width="313px"
@@ -267,6 +278,10 @@
 
 
     <!--Defensa-->
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     <TextView
         android:id="@+id/txtDef"
         android:layout_width="72dp"

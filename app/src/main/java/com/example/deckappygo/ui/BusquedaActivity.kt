@@ -7,7 +7,6 @@ import android.text.TextWatcher
 import android.util.Log
 import android.view.View
 import android.widget.Button
-import android.widget.SearchView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -24,7 +23,6 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.newSingleThreadContext
 import kotlinx.coroutines.withContext
 import kotlin.coroutines.CoroutineContext
-import kotlin.math.log
 
 class BusquedaActivity : AppCompatActivity()  {
 
@@ -62,7 +60,10 @@ class BusquedaActivity : AppCompatActivity()  {
             intent.putExtra("nombre", carta.name)
             intent.putExtra("imagenUrl", carta.card_images.first().image_url)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 
             intent.putExtra("efecto", carta.type)
             intent.putExtra("atributo", carta.attribute)
@@ -77,6 +78,9 @@ class BusquedaActivity : AppCompatActivity()  {
 
             Log.d("debug","Info Carta:" + carta.race)
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             startActivity(intent)
             finish()

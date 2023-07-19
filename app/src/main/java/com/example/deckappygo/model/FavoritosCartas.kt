@@ -14,7 +14,12 @@ data class FavoritosCartas(
     var atk: Long? = null,
     var def: Long? = null,
 
+<<<<<<< Updated upstream
     var desc: String? = null
     ,
+=======
+    var desc: String? = null,
+
+>>>>>>> Stashed changes
     var favorite: Boolean = false
 )

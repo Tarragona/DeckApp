@@ -41,8 +41,12 @@ class CartaServices {
 
         }
 
+<<<<<<< Updated upstream
 
         suspend fun guardarFavoritos(context: Context, carta: CartaModel){
+=======
+        suspend fun guardarFavoritos(context: Context, carta: FavoritosCartas){
+>>>>>>> Stashed changes
             firebaseAuth = FirebaseAuth.getInstance()
             val firebaseUser = firebaseAuth.currentUser
             val email : String = firebaseUser?.email!!
@@ -51,11 +55,17 @@ class CartaServices {
             db.collection("usuarios")
                 .document(email)
                 .collection("favoritos")
+<<<<<<< Updated upstream
                 .document(carta.id.toString())
                 .set(
                     hashMapOf(
                         "id" to carta.id,
 //                        "uid" to FavoritosCartas.uuid,
+=======
+                .document(carta.name.toString())
+                .set(  hashMapOf(
+                        "id" to carta.id,
+>>>>>>> Stashed changes
                         "name" to carta.name,
                         "type" to carta.type,
                         "attribute" to carta.attribute,
@@ -70,7 +80,11 @@ class CartaServices {
                 )
         }
 
+<<<<<<< Updated upstream
         suspend fun eliminarFavoritos(context: Context, carta: CartaModel){
+=======
+        suspend fun eliminarFavoritos(context: Context, carta: FavoritosCartas){
+>>>>>>> Stashed changes
             firebaseAuth = FirebaseAuth.getInstance()
             val firebaseUser = firebaseAuth.currentUser
             val email : String = firebaseUser?.email!!
@@ -79,7 +93,11 @@ class CartaServices {
             db.collection("usuarios")
                 .document(email)
                 .collection("favoritos")
+<<<<<<< Updated upstream
                 .document(carta.id.toString())
+=======
+                .document(carta.name.toString())
+>>>>>>> Stashed changes
                 .delete()
                 .addOnSuccessListener {
                     Log.d("prueba","ApiService: Carta eliminada de favoritos")
@@ -95,7 +113,13 @@ class CartaServices {
             val email : String = firebaseUser?.email!!
             var cartas = ArrayList<CartaModel>()
 
+<<<<<<< Updated upstream
             db.collection("usuarios").document(email).collection("favoritos")
+=======
+            db.collection("usuarios")
+                .document(email)
+                .collection("favoritos")
+>>>>>>> Stashed changes
                 .get()
                 .addOnSuccessListener { documents ->
                     if (documents != null) {

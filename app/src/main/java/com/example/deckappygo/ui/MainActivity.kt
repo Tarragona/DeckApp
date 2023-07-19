@@ -17,16 +17,11 @@ import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
+    val authUser: FirebaseAuth by lazy { FirebaseAuth.getInstance() }
 
-    private lateinit var firebaseAuth: FirebaseAuth
-    private lateinit var btnLogin: Button
-    private lateinit var txtLogin: TextView
-
-
-
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+<<<<<<< Updated upstream
         setContentView(R.layout.activity_main)
         firebaseAuth = FirebaseAuth.getInstance()
         checkUser()
@@ -55,14 +50,20 @@ class MainActivity : AppCompatActivity() {
                 val intent: Intent = Intent(this, CargaActivity::class.java)
                 startActivity(intent)
             }
+=======
+        goTo()
+>>>>>>> Stashed changes
 
     }
 
-    private fun checkUser(){
-        val firebaseUser = firebaseAuth.currentUser
-//        if (firebaseUser == null){
-//            //Usuario no logueado
-//            startActivity(Intent(this, MainActivity::class.java))
-//        }
+    fun goTo(){
+        if(authUser.currentUser != null){
+            startActivity(Intent(this, CargaActivity::class.java))
+            finish()
+        }else{
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+        }
     }
+
 }

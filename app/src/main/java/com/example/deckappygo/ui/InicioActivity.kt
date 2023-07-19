@@ -5,13 +5,23 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
+import android.widget.ProgressBar
 import android.widget.TextView
+<<<<<<< Updated upstream
+=======
+import android.widget.Toast
+>>>>>>> Stashed changes
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.deckappygo.R
 import com.example.deckappygo.data.CartaServices
 import com.example.deckappygo.model.CartaModel
 import com.example.deckappygo.model.CartasCollectionModel
+<<<<<<< Updated upstream
+=======
+import com.firebase.ui.auth.AuthUI
+>>>>>>> Stashed changes
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -21,6 +31,8 @@ import kotlin.coroutines.CoroutineContext
 
 class InicioActivity : AppCompatActivity() {
 
+    lateinit var btn_logout:Button
+    lateinit var pb_logout: ProgressBar
     lateinit var btnInicio: View
     lateinit var txtInicio: TextView
     lateinit var btnBusqueda: View
@@ -39,6 +51,7 @@ class InicioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
+        signOut()
 
         //Al presionar los botones de la lowbar hacer...
         //Boton o texto de inicio
@@ -101,6 +114,10 @@ class InicioActivity : AppCompatActivity() {
         adapter.onItemClick = { carta: CartaModel ->
             val intent = Intent(this, CartaActivity::class.java)
 
+<<<<<<< Updated upstream
+=======
+            intent.putExtra("ID", carta.id)
+>>>>>>> Stashed changes
             intent.putExtra("nombre", carta.name)
             intent.putExtra("imagenUrl", carta.card_images.first().image_url)
 
@@ -113,13 +130,39 @@ class InicioActivity : AppCompatActivity() {
 
             intent.putExtra("descripcion", carta.desc)
 
+<<<<<<< Updated upstream
             Log.d("debug","Info Carta:" + carta.race)
+=======
+            Log.d("debug","Info Carta:" + "ID:" + carta.id + "Nombre:" + carta.name)
+>>>>>>> Stashed changes
 
             startActivity(intent)
             finish()
         }
     }
 
+<<<<<<< Updated upstream
+=======
+    private fun signOut() {
+
+        btn_logout = findViewById(R.id.btn_logout)
+        pb_logout = findViewById(R.id.pb_logout)
+
+        btn_logout.setOnClickListener{
+            pb_logout.visibility = View.VISIBLE
+            btn_logout.isEnabled = false
+            AuthUI.getInstance().signOut(this).addOnSuccessListener {
+                startActivity(Intent(this,LoginActivity::class.java))
+                Toast.makeText(this, "Sesion Cerrada", Toast.LENGTH_SHORT).show()
+                finish()
+            }.addOnFailureListener {
+                btn_logout.isEnabled = true
+                pb_logout.visibility = View.GONE
+                Toast.makeText(this, "Error ${it.message}", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+>>>>>>> Stashed changes
 
 
 }
