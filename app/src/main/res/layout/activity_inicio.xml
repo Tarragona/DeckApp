@@ -39,7 +39,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-<<<<<<< Updated upstream
     <!-- Grid para las cartas -->
     <!--    <GridView-->
     <!--        android:id="@+id/gridcartas"-->
@@ -57,25 +56,24 @@
 
 
     <!-- Toolbar -->
-=======
     <!-- RV Items Cartas -->
+
     <Button
         android:id="@+id/btn_logout"
         style="@style/FirebaseUI.Button.AccountChooser.GoogleButton"
-        android:layout_width="95dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="151dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="288dp"
         android:text="Salir"
         android:textColorHighlight="@color/design_default_color_secondary_variant"
         android:textColorLink="@color/design_default_color_secondary_variant"
         android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/txtTituloInicio"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:rippleColor="@color/botones" />
 
->>>>>>> Stashed changes
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvCartasInicio"
         android:layout_width="0dp"
@@ -87,11 +85,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTituloInicio" />
 
-<<<<<<< Updated upstream
-=======
-
-
->>>>>>> Stashed changes
     <!-- Toolbar -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"

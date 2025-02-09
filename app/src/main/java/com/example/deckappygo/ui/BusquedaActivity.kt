@@ -59,12 +59,6 @@ class BusquedaActivity : AppCompatActivity()  {
 
             intent.putExtra("nombre", carta.name)
             intent.putExtra("imagenUrl", carta.card_images.first().image_url)
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-
             intent.putExtra("efecto", carta.type)
             intent.putExtra("atributo", carta.attribute)
             intent.putExtra("tipo", carta.race)
@@ -78,10 +72,6 @@ class BusquedaActivity : AppCompatActivity()  {
 
             Log.d("debug","Info Carta:" + carta.race)
 
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             startActivity(intent)
             finish()
         }

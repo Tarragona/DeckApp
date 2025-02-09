@@ -58,19 +58,20 @@
 <!--        app:layout_constraintEnd_toEndOf="parent"-->
 <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
+
+    <!-- Imagen de la carta -->
     <Switch
         android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_width="218dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
         android:text="Favoritos"
         android:textColor="#FF9800"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <!-- Imagen de la carta -->
     <TextView
         android:id="@+id/txtID"
         android:layout_width="wrap_content"
@@ -82,20 +83,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <!-- Nombre de la carta -->
     <ImageView
         android:id="@+id/imgCartaElegida"
         android:layout_width="313px"
         android:layout_height="456px"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="76dp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/fondoBusqueda"
         app:srcCompat="@drawable/carta_carta_elegida1" />
 
-
-    <!-- Nombre de la carta -->
     <TextView
         android:id="@+id/txtNombreCarta"
         android:layout_width="wrap_content"
@@ -278,14 +278,10 @@
 
 
     <!--Defensa-->
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
     <TextView
         android:id="@+id/txtDef"
-        android:layout_width="72dp"
-        android:layout_height="22dp"
+        android:layout_width="86dp"
+        android:layout_height="31dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="20dp"
