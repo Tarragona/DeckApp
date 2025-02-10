@@ -11,17 +11,13 @@ import android.widget.ImageView
 import android.widget.Switch
 import android.widget.TextView
 import android.widget.Toast
-<<<<<<< Updated upstream
+
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.deckappygo.R
 import com.example.deckappygo.data.Repositorio
 import com.example.deckappygo.model.CartaModel
-=======
-import com.bumptech.glide.Glide
-import com.example.deckappygo.R
-import com.example.deckappygo.data.Repositorio
->>>>>>> Stashed changes
+
 import com.example.deckappygo.model.FavoritosCartas
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -104,18 +100,10 @@ class CartaActivity : AppCompatActivity() {
 
         //Boton Favoritos
         var fav = findViewById<Switch>(R.id.switch1);
-<<<<<<< Updated upstream
         fav.isChecked = intent.extras?.getBoolean("favorito") == true;
 
         //Recibir datos de l pantalla anterior
         var id = intent.extras?.getInt("ID")
-=======
-//        fav.isChecked = intent.extras?.getBoolean("favorito") == true;
-
-        //Recibir datos de l pantalla anterior
-        var id = findViewById<TextView>(R.id.txtID)
-        id.text = intent.extras?.getInt("ID").toString()
->>>>>>> Stashed changes
 
         var nombre = findViewById<TextView>(R.id.txtNombreCarta)
         nombre.text = intent.extras?.getString("nombre")
@@ -152,7 +140,6 @@ class CartaActivity : AppCompatActivity() {
 
 
         //Accion del boton favoritos
-<<<<<<< Updated upstream
 //        fav.setOnCheckedChangeListener { _, isChecked ->
 //
 //            var carta = FavoritosCartas()
@@ -200,51 +187,3 @@ class CartaActivity : AppCompatActivity() {
 
     }
 }
-=======
-        fav.setOnCheckedChangeListener { _, isChecked ->
-
-            var carta = FavoritosCartas()
-            carta.id = intent.extras?.getInt("ID")
-            carta.uuid = intent.extras?.getString("UUID")
-
-            carta.name = intent.extras?.getString("nombre")
-
-            carta.type = intent.extras?.getString("efecto")
-            carta.attribute = intent.extras?.getString("atributo")
-            carta.race = intent.extras?.getString("tipo")
-            carta.level = intent.extras?.getLong("nivel")
-            carta.atk = intent.extras?.getLong("atk")
-            carta.def = intent.extras?.getLong("def")
-            carta.desc = intent.extras?.getString("descripcion")
-
-//            carta.favorite = intent.extras?.getBoolean("favorito") == true
-
-            val message = if (isChecked) "Switch1:ON" else "Switch1:OFF"
-            Log.d("PRUEBA",message);
-
-            if(isChecked){
-                scope.launch {
-                    carta.favorite = true;
-                    Repositorio.guardarFavoritos(this@CartaActivity , carta)
-                    withContext(Dispatchers.Main){
-                        Log.d("prueba","Se GUARDO la carta favorita")
-                        Toast.makeText(this@CartaActivity,"Carta Agregada a Favoritos", Toast.LENGTH_SHORT).show()
-                    }
-                }
-            }
-            else{
-                scope.launch {
-                    Repositorio.eliminarFavoritos(this@CartaActivity, carta)
-                    withContext(Dispatchers.Main){
-                        Log.d("prueba","Se ELIMINO la carta favorita")
-                        Toast.makeText(this@CartaActivity,"Carta Eliminada de Favoritos", Toast.LENGTH_SHORT).show()
-                    }
-                    carta.favorite = false;
-                }
-            }
-        }
-
-    }
-
-}
->>>>>>> Stashed changes

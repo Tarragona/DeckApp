@@ -48,12 +48,6 @@ class FavoritosActivity : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
 
-<<<<<<< Updated upstream
-=======
-        val id = intent.getStringExtra("ID")
-
-
->>>>>>> Stashed changes
         //El boton Back
         btnAtras = findViewById(R.id.btnAtras)
         btnAtras.setOnClickListener {
