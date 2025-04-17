@@ -1,12 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">DeckYGO</string>
-    <string name="nombreapp">DeckApp</string>
-    <string name="btnInicio">Inicio</string>
     <string name="salir">Salir</string>
     <string name="mi_deck">Mi Deck</string>
     <string name="busqueda">Busqueda</string>
     <string name="inicio">Inicio</string>
     <string name="fondo_ppal">fondo_ppal</string>
-
-
 </resources>

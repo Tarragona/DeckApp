@@ -2,7 +2,7 @@
   "project_info": {
     "project_number": "872515252760",
     "project_id": "deckapp-f4aa0",
-    "storage_bucket": "deckapp-f4aa0.appspot.com"
+    "storage_bucket": "deckapp-f4aa0.firebasestorage.app"
   },
   "client": [
     {

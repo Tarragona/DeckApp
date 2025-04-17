@@ -7,7 +7,6 @@ import android.text.TextWatcher
 import android.util.Log
 import android.view.View
 import android.widget.Button
-import android.widget.SearchView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -23,7 +22,6 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.newSingleThreadContext
 import kotlinx.coroutines.withContext
 import kotlin.coroutines.CoroutineContext
-import kotlin.math.log
 
 class BusquedaActivity : AppCompatActivity()  {
 
@@ -40,13 +38,12 @@ class BusquedaActivity : AppCompatActivity()  {
     private var nombreCartas = ArrayList<String>()
     private lateinit var rvBusq: RecyclerView
     private lateinit var svBusqueda: TextInputEditText
-//    private  lateinit var viewModel: MainViewModel
     private lateinit var adapter : BusquedaAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_busqueda)
+
         rvBusq = findViewById<RecyclerView>(R.id.rvBusqueda)
         svBusqueda = findViewById<TextInputEditText>(R.id.svBusqueda)
         rvBusq.layoutManager = LinearLayoutManager(this)
@@ -56,8 +53,25 @@ class BusquedaActivity : AppCompatActivity()  {
 
         adapter.onItemClick = { carta: CartaModel ->
             val intent = Intent(this, CartaActivity::class.java)
+
+            intent.putExtra("ID",carta.id)
+
             intent.putExtra("nombre", carta.name)
-            intent.putExtra("imagenUrl", carta.card_images.first().image_url_small)
+            intent.putExtra("imagenUrl", carta.card_images.first().image_url)
+
+            intent.putExtra("efecto", carta.type)
+            intent.putExtra("atributo", carta.attribute)
+            intent.putExtra("tipo", carta.race)
+            intent.putExtra("nivel", carta.level)
+            intent.putExtra("atk", carta.atk)
+            intent.putExtra("def", carta.def)
+
+            intent.putExtra("descripcion", carta.desc)
+
+//            intent.putExtra("favorito", fav.favorito )
+
+            Log.d("debug","Info Carta:" + carta.race)
+
             startActivity(intent)
             finish()
         }
@@ -77,30 +91,9 @@ class BusquedaActivity : AppCompatActivity()  {
         }
 
 
-//        NO CREO QUE VAYA
-//        bindView()
-//        bindViewModel()
-
-//        svBusqueda.setOnQueryTextListener(
-//            object : SearchView.OnQueryTextListener {
-//                override fun onQueryTextChange(newText: String): Boolean {
-//                    Log.d("debug",newText)
-//                    return true
-//                }
-//
-//                override fun onQueryTextSubmit(query: String): Boolean {
-//                    adapter.filterCardsByName(query)
-//                    return true
-//                }
-//            }
-//
-//        )
-
-
-
+        //El boton Back
         btnAtras = findViewById(R.id.btnAtras)
         btnAtras.setOnClickListener {
-            finish()
             onBackPressed()
         }
 
@@ -148,7 +141,7 @@ class BusquedaActivity : AppCompatActivity()  {
         super.onStart()
 
         var searchInput = findViewById<TextInputEditText>(R.id.svBusqueda)
-        // filtro
+        // Filtro
         searchInput.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
             }
@@ -184,20 +177,4 @@ class BusquedaActivity : AppCompatActivity()  {
 
     }
 
-
-
-//      NO CREO QUE VAYA
-
-//    private fun bindView() {
-//        rvBusq = findViewById(R.id.rvBusqueda)
-//        rvBusq.layoutManager = LinearLayoutManager(this)
-//    }
-////
-//    private fun bindViewModel() {
-//        viewModel = ViewModelProvider(this)[MainViewModel::class.java]
-////        viewModel.cartas.observe(this){
-////            //Actualizar la lista de la pantalla
-////        }
-//
-//    }
 }

@@ -12,30 +12,19 @@ import com.example.deckappygo.R
 
 class CargaActivity : AppCompatActivity() {
 
-    private lateinit var animacion: ImageView
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_carga)
-        animacion = findViewById(R.id.animacionCarga)
+
 
         Handler(Looper.getMainLooper()).postDelayed({
 
-            //SharedPreferences (Recibir informacion)
-//            var prefs = getSharedPreferences("com.example.deckappygo.sharedpref", Context.MODE_PRIVATE)
-//            var user = prefs.getString("user", "")
-
             var intent = Intent(this, InicioActivity::class.java)
-
-            //Enviar datos
-            //intent.putExtra("ID", "12345")
 
             startActivity(intent)
             finish()
 
         },3000)
-
-//        Glide.with(getBaseContext()).load(animacion)
 
 
     }
